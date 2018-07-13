@@ -7,9 +7,13 @@
     {{ partial "title.html" . }}
 
     <div class="article-content">
-      {{ .Content }}
+      
+        {{ $data := .Data }}
+        {{ range $key,$value := .Data.Terms.ByCount }}
+        <a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }} </a> ({{ $value.Count }}) <br>
+        {{ end }}
+
     </div>
-    
   </article>
 
 </main>

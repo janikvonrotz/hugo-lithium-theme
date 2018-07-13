@@ -4,13 +4,21 @@
 
   <article class="article">
 
+    {{ partial "duration.html" . }}
+
     {{ partial "title.html" . }}
 
+    {{ partial "date.html" . }}
+
     <div class="article-content">
-      {{ .Content }}
+        {{ .Content }}
+        {{ partial "categories" . }}
+        {{ partial "tags" . }}
     </div>
-    
+
   </article>
+
+  {{ template "_internal/disqus.html" . }}
 
 </main>
 

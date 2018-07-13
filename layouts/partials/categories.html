@@ -1,0 +1,6 @@
+<p class="article-categories">Categories:&nbsp;
+    {{ range $i, $e := .Params.tags }}
+        {{if $i}},{{end}}
+        <a href="/tags/{{ . }}">{{ . }}</a>
+    {{ end }}
+</p>

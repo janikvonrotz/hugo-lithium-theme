@@ -1,7 +1,10 @@
 +++
+title = "Hello World!"
 date = "2016-05-05T21:49:57-07:00"
-title = "Hello"
-
+category: Blog
+tags:
+ - hello
+ - world
 +++
 
 Hello World!

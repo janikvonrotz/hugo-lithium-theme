@@ -4,13 +4,15 @@
 
   <article class="article">
 
-    {{ partial "title.html" . }}
+      {{ partial "title.html" . }}
 
     <div class="article-content">
       {{ .Content }}
     </div>
-    
+
   </article>
+
+  {{ template "_internal/disqus.html" . }}
 
 </main>
 
