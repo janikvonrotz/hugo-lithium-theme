@@ -1,0 +1,15 @@
+<section class="archive">
+
+    {{ range (where .Data.Pages "Type" "post").GroupByDate "2006" }}
+    <h2 class="title">{{ .Key }}</h2>
+    {{ range .Pages }}
+    <article>
+    <a href="{{ .Permalink }}" class="link">{{ .Title }}</a>
+    <span class="date">
+        {{ .Date.Format "January 2, 2006" }}
+    </span>
+    </article>
+    {{ end }}
+    {{ end }}
+      
+</section>

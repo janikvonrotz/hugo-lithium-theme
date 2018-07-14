@@ -1,8 +1,8 @@
 {{ partial "header.html" . }}
 
-<main class="content" role="main">
+<main role="main">
 
-  <article class="article">
+  <article>
 
     {{ partial "duration.html" . }}
 
@@ -10,11 +10,11 @@
 
     {{ partial "date.html" . }}
 
-    <div class="article-content">
+    <section>
         {{ .Content }}
         {{ partial "categories" . }}
         {{ partial "tags" . }}
-    </div>
+    </section>
 
   </article>
 

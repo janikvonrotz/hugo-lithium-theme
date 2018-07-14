@@ -1,18 +1,18 @@
 {{ partial "header.html" . }}
 
-<main class="content" role="main">
+<main role="main">
 
-  <article class="article">
+  <article>
 
     {{ partial "title.html" . }}
 
-    <div class="article-content">
+    <section>
       
       {{ range .Data.Pages.ByDate.Reverse }}
       <a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> <br>
       {{ end }}
 
-    </div>
+    </section>
 
   </article>
 

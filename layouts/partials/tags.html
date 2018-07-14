@@ -1,4 +1,4 @@
-<p class="article-tags">Tags:&nbsp;
+<p class="tags">Tags:&nbsp;
     {{ range $i, $e := .Params.tags }}
         {{if $i}},{{end}}
         <a href="/tags/{{ . | urlize }}">{{ . }}</a>

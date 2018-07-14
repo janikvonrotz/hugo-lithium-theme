@@ -43,3 +43,8 @@ Run `hugo new page/<page-name>.md` to create a page.
 ## License
 
 The code is available under the [MIT license](https://github.com/janikvonrotz/hugo-lithium-theme/blob/master/LICENSE.md).
+
+## Source
+
+[Mozilla Docs - Main Element](https://developer.mozilla.org/de/docs/Web/HTML/Element/main)  
+[Mozilla Docs - Article Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)

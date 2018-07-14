@@ -1,24 +1,14 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
+
+/*
+Basic
+*/
 
 body {
   font-family: 'Merriweather', serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
+  position: relative;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   color: #222;
 }
@@ -32,19 +22,18 @@ img {
   height: auto;
 }
 
-.wrapper {
-  overflow: hidden;
-  position: relative;
-}
+/*
+Navigation
+*/
 
-.header {
+body > header {
   padding: 20px 0;
   position: relative;
   background: #f5f5f5;
   border-bottom: 1px solid #eaeaea;
 }
 
-.nav {
+nav {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 15px;
@@ -52,48 +41,52 @@ img {
   text-align: right;
 }
 
-.nav-logo {
+nav .logo {
   float: left;
   margin-top: -11px;
   transition: transform 150ms ease-out;
 }
 
-.nav-logo:hover {
+nav .logo:hover {
   transform: scale(1.1);
 }
 
-.nav-logo img {
+nav .logo img {
   display: block;
   max-height: 40px;
   width: auto;
 }
 
-.nav-links {
+nav .links {
   margin: 0;
   padding: 0;
   font-size: 14px;
   list-style: none;
 }
 
-.nav-links li {
+nav .links li {
   display: inline-block;
   margin: 0 0 0 15px;
 }
 
-.nav-links li:first-child {
+nav .links li:first-child {
   margin-left: 0;
 }
 
-.nav-links a {
+nav .links a {
   text-decoration: none;
   color: #111;
 }
 
-.nav-links a:hover {
+nav .links a:hover {
   color: #000;
 }
 
-.content {
+/*
+Main
+*/
+
+main {
   max-width: 700px;
   margin: 60px auto 80px;
   padding: 0 15px;
@@ -102,18 +95,43 @@ img {
   color: #555;
 }
 
-.article-title {
+main hr {
+  width: 150px;
+  margin: 50px auto;
+  height: 1px;
+  overflow: hidden;
+  border: none;
+  background: #e5e5e5;
+}
+
+main .highlight {
+  border-radius: 3px;
+  position: relative;
+  margin: 40px 0;
+  font-size: 14px;
+}
+
+main .highlight pre {
+  padding: 10px;
+  overflow-x: scroll;
+}
+
+/*
+Article
+*/
+
+article .title {
   font-size: 34px;
   color: #222;
   margin: 0;
   line-height: 1.3;
 }
 
-.article-date {
+article .date {
   color: #ccc;
 }
 
-.article-duration {
+article .duration {
   margin-top: 12px;
   float: right;
   font-size: 10px;
@@ -125,11 +143,11 @@ img {
   color: #fff
 }
 
-.article-content p {
+article p {
   margin: 15px 0 25px;
 }
 
-.article-content a {
+article a {
   text-decoration: none;
   color: inherit;
   border-bottom: 3px solid #CBF8DF;
@@ -138,33 +156,16 @@ img {
   transition: background 150ms ease;
 }
 
-.article-content a:hover,
-.article-content a:focus {
+article a:hover,
+article a:focus {
   background: #CBF8DF;
 }
 
-.article-content hr {
-  width: 150px;
-  margin: 50px auto;
-  height: 1px;
-  overflow: hidden;
-  border: none;
-  background: #e5e5e5;
-}
+/*
+Archive
+*/
 
-.highlight {
-  border-radius: 3px;
-  position: relative;
-  margin: 40px 0;
-  font-size: 14px;
-}
-
-.highlight pre {
-  padding: 10px;
-  overflow-x: scroll;
-}
-
-.archive {
+section.archive {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -173,17 +174,17 @@ img {
   color: #111;
 }
 
-.archive-title {
+section.archive .title {
   font-size: 32px;
   margin-top: 60px;
 }
 
-.archive-item {
+section.archive article {
   margin: 5px 0 15px;
   padding: 0;
 }
 
-.archive-item-date {
+section.archive .date {
   color: #ccc;
   font-size: 14px;
   padding: 5px 0;
@@ -191,7 +192,7 @@ img {
   display: block;
 }
 
-.archive-item-link {
+section.archive .link {
   display: inline-block;
   text-decoration: none;
   font-size: 21px;
@@ -200,19 +201,24 @@ img {
   color: #222;
   padding: 5px 0;
   border-bottom: 1px solid #ddd;
+  box-shadow: none;
 }
 
-.archive-item-link:hover {
+section.archive .link:hover {
   border-bottom-color: #222;
 }
 
-.footer {
+/*
+Footer
+*/
+
+footer {
   padding: 25px 0;
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
 
-.footer-links {
+footer.links {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -220,94 +226,112 @@ img {
   font-size: 14px;
 }
 
-.footer-links li {
+footer .links li {
   margin: 0;
   padding: 0;
   display: inline-block;
 }
 
-.footer-links a {
+footer .links a {
   color: #888;
   text-decoration: none;
   transition: color 150ms ease;
   margin: 0 15px;
 }
 
-.footer-links a:hover,
-.footer-links a:focus {
+footer .links a:hover,
+footer .links a:focus {
   color: #222;
 }
 
-.footer-links li::before {
+footer .links li::before {
   content: '/';
   position: relative;
   left: -2px;
 }
 
-.footer-links li:first-child::before {
+footer .links li:first-child::before {
   display: none;
 }
-.footer-links-kudos img {
+
+footer .links-kudos img {
   position: relative;
   top: 6px;
   margin-left: 2px;
 }
 
+/*
+Media query: Desktop
+*/
+
 @media (min-width: 600px) {
-  .header {
+
+  /* Basic */
+
+  body > header {
     padding: 25px 0;
   }
 
-  .nav-logo {
+  /* Navigation */
+
+  nav .logo {
     margin-top: -13px;
   }
 
-  .nav-logo img {
+  nav .logo img {
     max-height: 50px;
   }
 
-  .nav-links {
+  nav .links {
     font-size: 18px;
   }
 
-  .nav-links li {
+  nav .links li {
     margin: 0 0 0 30px;
   }
 
-  .content {
+  /* Main */
+
+  main {
     font-size: 19px;
     line-height: 1.8;
     margin: 100px auto;
   }
 
-  .highlight {
+  main .highlight {
     font-size: 16px;
     margin: 40px -20px;
   }
 
-  .archive {
+  /* Archive */
+
+  section.archive {
     text-align: left;
   }
 
-  .archive-title {
+  section.archive .title {
     font-size: 38px;
   }
 
-  .archive-item-date {
+  section.archive .date {
     font-size: 19px;
     text-align: right;
     float: right;
   }
 
-  .article-title {
+  /* Article */
+
+  article .title {
     font-size: 42px;
   }
 
-  .article-duration {
+  article .duration {
     font-size: 12px;
   }
 
-  .footer-links {
+  /* Footer */
+
+  footer .links {
     font-size: inherit;
   }
 }
