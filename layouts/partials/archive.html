@@ -5,9 +5,9 @@
     {{ range .Pages }}
     <article>
     <a href="{{ .Permalink }}" class="link">{{ .Title }}</a>
-    <span class="date">
+    <p class="date">
         {{ .Date.Format "January 2, 2006" }}
-    </span>
+    </p>
     </article>
     {{ end }}
     {{ end }}

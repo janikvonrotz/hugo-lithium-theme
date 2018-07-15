@@ -10,6 +10,8 @@ A simple responsive blog theme for [Hugo](https://gohugo.io/).
 - Responsive
 - Disqus
 - Google Analytics
+- Tags and Categories
+- Featured Image
 
 ## Installation
 
@@ -43,6 +45,17 @@ Run `hugo new page/<page-name>.md` to create a page.
 ## License
 
 The code is available under the [MIT license](https://github.com/janikvonrotz/hugo-lithium-theme/blob/master/LICENSE.md).
+
+## Color Scheme
+
+    light: #ddd
+    dark: #222
+    link active: #CBF8DF
+    background: #bbb
+    shaded: #ccc
+    header: #111
+    header active: #000
+    very light: #888;
 
 ## Source
 
