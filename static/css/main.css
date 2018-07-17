@@ -72,25 +72,14 @@ section.archive a {
 pre {
   line-height: 1.8;
 }
-blockquote{
+blockquote {
   font-size: 1.4em;
-  width:60%;
-  margin:50px auto;
-  font-style: italic;
-  padding:1.2em 30px 1.2em 75px;
-  border-left:8px solid #A2DAC3 ;
   line-height:1.6;
-  position: relative;
-  background:#f5f5f5;
 }
-blockquote::before{
+blockquote::before {
   font-family: Arial;
-  content: "\201C";
   color:#A2DAC3;
   font-size: 4em;
-  position: absolute;
-  left: 10px;
-  top:-10px;
 }
 
 @media (min-width: 600px) {
@@ -234,6 +223,20 @@ article p.date {
 article a:hover,
 article a:focus {
   background: #CBF8DF;
+}
+article blockquote {
+  width:60%;
+  margin:50px auto;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #A2DAC3 ;
+  position: relative;
+  background:#f5f5f5;
+}
+article blockquote::before {
+  content: "\201C";
+  position: absolute;
+  left: 10px;
+  top:-10px;
 }
 
 /* Archive */
