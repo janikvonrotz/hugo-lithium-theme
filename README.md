@@ -48,14 +48,16 @@ The code is available under the [MIT license](https://github.com/janikvonrotz/hu
 
 ## Color Scheme
 
-    light: #ddd
-    dark: #222
-    link active: #CBF8DF
-    background: #bbb
-    shaded: #ccc
-    header: #111
-    header active: #000
-    very light: #888;
+    font very dark: #222
+    font dark: #555
+    font light: #888
+    font very light: #ccc
+    theme dark: #A2DAC3
+    theme light: #CBF8DF
+    background light: #f5f5f5
+    background dark: #bbb
+    font header: #111
+    font header active: #000
 
 ## Source
 

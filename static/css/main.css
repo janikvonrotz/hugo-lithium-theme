@@ -37,7 +37,7 @@ p.duration {
   font-family: 'Lato', sans-serif;
   color: #fff;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 14px;
 }
 nav li {
   line-height: 1;
@@ -71,6 +71,26 @@ section.archive a {
 }
 pre {
   line-height: 1.8;
+}
+blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-style: italic;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #A2DAC3 ;
+  line-height:1.6;
+  position: relative;
+  background:#f5f5f5;
+}
+blockquote::before{
+  font-family: Arial;
+  content: "\201C";
+  color:#A2DAC3;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
 }
 
 @media (min-width: 600px) {
@@ -238,7 +258,7 @@ section.archive .date {
 section.archive .link {
   display: inline-block;
   padding: 5px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
   box-shadow: none;
 }
 section.archive .link:hover {

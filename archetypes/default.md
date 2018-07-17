@@ -1,7 +1,8 @@
 +++
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-category: Blog
+categories:
+ - Blog
 tags:
  - hello
  - world
