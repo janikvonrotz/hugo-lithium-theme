@@ -274,9 +274,6 @@ section.archive .link:hover {
   section.archive {
     text-align: left;
   }
-  section.archive .date {
-    float: right;
-  }
 }
 
 /* Footer */
