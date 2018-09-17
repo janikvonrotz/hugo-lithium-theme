@@ -12,6 +12,8 @@ A simple responsive blog theme for [Hugo](https://gohugo.io/).
 - Google Analytics
 - Tags and Categories
 - Featured Image
+- Twitter Cards
+- Open Graph metadata
 
 ## Installation
 

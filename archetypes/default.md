@@ -6,6 +6,7 @@ categories:
 tags:
  - hello
  - world
-image: /images/logo.png
+images:
+ - /images/logo.png
 draft: true
 +++
