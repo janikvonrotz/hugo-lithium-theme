@@ -1,0 +1,23 @@
+<section class="post">
+    
+    <article>
+
+        {{ partial "image.html" . }}
+
+        {{ partial "duration.html" . }}
+
+        {{ partial "title.html" . }}
+
+        {{ partial "date.html" . }}
+
+        <section>
+            {{ .Content }}
+            {{ partial "categories" . }}
+            {{ partial "tags" . }}
+        </section>
+
+    </article>
+
+    {{ template "_internal/disqus.html" . }}
+
+</section>

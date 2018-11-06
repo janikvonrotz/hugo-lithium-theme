@@ -3,14 +3,14 @@
 
 name = "Lithium"
 license = "MIT"
-licenselink = "https://github.com/jrutheiser/hugo-lithium-theme/blob/master/LICENSE.md"
+licenselink = "https://github.com/janikvonrotz/hugo-lithium-theme/blob/master/LICENSE.md"
 description = "Lithium minimal theme"
-homepage = "https://github.com/jrutheiser/hugo-lithium-theme"
+homepage = "https://github.com/janikvonrotz/hugo-lithium-theme"
 tags = ["blog"]
-features = ["blog", "google analytics"]
+features = ["blog", "google analytics", "responsive", "disqus", "twitter cards"]
 min_version = 0.15
 
 [author]
-  name = "Jonathan Rutheiser"
-  homepage = "http://jrutheiser.com/"
+  name = "Janik von Rotz"
+  homepage = "https://janikvonrotz.ch/"
 

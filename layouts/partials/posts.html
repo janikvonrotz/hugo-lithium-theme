@@ -1,0 +1,29 @@
+<section class="posts">
+
+    <article>
+
+        {{ range (.Paginate .Pages).Pages }}
+
+            {{ partial "image.html" . }}
+
+            {{ partial "title.html" . }}
+
+            {{ partial "date.html" . }}
+
+            <section>
+                <p>{{ .Summary }}</p>
+            </section>
+
+            <p><a href="{{ .RelPermalink }}">Read More...</a></p>
+
+            <hr />
+
+            <br />
+
+        {{ end }}
+
+    </article>
+
+    {{ partial "pagination.html" . }}
+
+</section>

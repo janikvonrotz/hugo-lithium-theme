@@ -1,0 +1,15 @@
+<section class="page">
+
+    <article>
+
+        {{ partial "title.html" . }}
+
+        <section>
+            {{ .Content }}
+        </section>
+
+    </article>
+
+    {{ template "_internal/disqus.html" . }}
+
+</section>

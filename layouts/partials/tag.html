@@ -1,0 +1,19 @@
+<section class="tag">
+
+    <article>
+
+        {{ partial "title.html" . }}
+
+        <section>
+            
+            <ul>
+                {{ range .Data.Pages.ByDate.Reverse }}
+                    <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a></li>
+                {{ end }}
+            </ul>
+
+        </section>
+
+    </article>
+
+</section>
