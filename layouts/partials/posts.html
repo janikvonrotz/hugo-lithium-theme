@@ -2,7 +2,8 @@
 
     <article>
 
-        {{ range (.Paginate .Pages).Pages }}
+        {{ $paginator := .Paginate (where .Pages "Type" "post") }}
+        {{ range $paginator.Pages }}
 
             {{ partial "image.html" . }}
 

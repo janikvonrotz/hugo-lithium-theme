@@ -2,7 +2,8 @@
     
     <article>
 
-        {{ partial "title.html" . }}
+        {{ partial "title.html" (dict "Title" (printf "Category: %s" $.Title ) ) }}
+        <p><a href="/categories/">Show all categories</a></p>
 
         <section>
             

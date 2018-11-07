@@ -31,3 +31,5 @@ disqusShortname = ""
     [params.icon]
     url = "favicon.ico"
 
+    [params.archive]
+    url = "/archive/"
