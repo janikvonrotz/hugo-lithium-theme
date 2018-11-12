@@ -1,8 +1,8 @@
 <section class="archive">
 
-    {{ range (where .Data.Pages "Type" "post").GroupByDate "2006" }}
+    {{ range (where .Site.Pages "Type" "post").GroupByDate "2006" }}
 
-        <h2 class="title">{{ .Key }}</h2>
+        {{ partial "title.html" (dict "Title" .Key ) }}
 
         {{ range .Pages }}
 

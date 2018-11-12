@@ -5,9 +5,9 @@
         {{ $paginator := .Paginate (where .Pages "Type" "post") }}
         {{ range $paginator.Pages }}
 
-            {{ partial "image.html" . }}
+            <a href="{{ .RelPermalink }}"> {{ partial "image.html" . }}</a>
 
-            {{ partial "title.html" . }}
+            <a href="{{ .RelPermalink }}">{{ partial "title.html" . }}</a>
 
             {{ partial "date.html" . }}
 
