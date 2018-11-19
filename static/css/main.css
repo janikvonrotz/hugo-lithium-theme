@@ -85,6 +85,12 @@ blockquote::before {
 	color:#A2DAC3;
 	font-size: 4em;
 }
+label, input, button {
+	font-family: 'Merriweather', serif;
+	color: #555;
+	font-size: 16px;
+	line-height: 1.7;
+}
 
 @media (min-width: 600px) {
 
