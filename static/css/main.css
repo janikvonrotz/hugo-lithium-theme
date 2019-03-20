@@ -27,7 +27,7 @@ h2 {
 h3 {
 	font-size: 26px;
 }
-p, li {
+p, li, td, th {
 	font-family: 'Merriweather', serif;
 	color: #555;
 	font-size: 16px;
@@ -91,6 +91,12 @@ label, input, button {
 	font-size: 16px;
 	line-height: 1.7;
 }
+table { 
+    border-collapse: collapse; 
+}
+table tr {
+	border-bottom: 1pt solid #888;
+}
 
 @media (min-width: 600px) {
 
@@ -103,7 +109,7 @@ label, input, button {
 	h3 {
 		font-size: 34px;
 	}
-	p, li {
+	p, li, td, th {
 		font-size: 19px;
 		line-height: 1.8;
 	}
