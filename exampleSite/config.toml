@@ -2,6 +2,7 @@ baseurl = "https://example.org"
 languageCode = "en-us"
 title = "Lithium Theme"
 theme = "hugo-lithium-theme"
+themesDir = "../../"
 googleAnalytics = ""
 disqusShortname = ""
 
@@ -33,3 +34,7 @@ disqusShortname = ""
 
     [params.archive]
     url = "/archive/"
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+    page = ["HTML"]

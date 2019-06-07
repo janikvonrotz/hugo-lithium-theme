@@ -1,6 +1,7 @@
-+++
-title = "About"
-date = "2016-05-05T21:48:51-07:00"
-+++
+---
+title: About
+date: 2013-07-02T08:23:30+00:00
+author: Janik von Rotz
+---
 
-Lorem ipsum dolor sit amet.
+About
