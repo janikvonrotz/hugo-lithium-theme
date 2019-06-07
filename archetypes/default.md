@@ -1,4 +1,4 @@
-+++
+---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 categories:
@@ -9,4 +9,4 @@ tags:
 images:
  - /images/logo.png
 draft: true
-+++
+---

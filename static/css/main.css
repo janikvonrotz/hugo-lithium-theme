@@ -317,6 +317,11 @@ section.archive .link:hover {
 	}
 }
 
+/* Search */
+section.search .title {
+	margin-bottom: 10px;
+}
+
 /* Footer */
 
 footer {

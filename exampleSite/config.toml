@@ -35,6 +35,8 @@ disqusShortname = ""
     [params.archive]
     url = "/archive/"
 
+    [params.search]
+    url = "/search/"
+
 [outputs]
-    home = ["HTML", "RSS", "JSON"]
-    page = ["HTML"]
+    section = ["JSON", "HTML"]
