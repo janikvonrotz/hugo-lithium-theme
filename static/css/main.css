@@ -148,6 +148,10 @@ nav .logo img {
 	max-height: 40px;
 	width: auto;
 }
+nav .search img {
+	width: 35px;
+	margin-bottom: -10px;
+}
 nav .links {
 	margin: 0;
 	padding: 0;

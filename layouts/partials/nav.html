@@ -11,6 +11,9 @@
     {{ range .Site.Menus.main }}
     <li><a href="{{ .URL }}">{{ .Name }}</a></li>
     {{ end }}
+    <li><a href="/search/" class="search">
+      <img src="/images/search.svg" alt="Search">
+  </a></li>
   </ul>
 
 </nav>
