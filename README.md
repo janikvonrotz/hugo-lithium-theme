@@ -32,6 +32,10 @@ $ git clone https://github.com/janikvonrotz/hugo-lithium-theme
 Take a look at the sample [config.toml](https://github.com/janikvonrotz/hugo-lithium-theme/blob/master/exampleSite/config.toml)
 file located in the [exampleSite](https://github.com/janikvonrotz/hugo-lithium-theme/blob/master/exampleSite) folder.
 
+### Search
+
+By default this template will create a JSON document of all posts. If you define a `search` page using [this search page template](https://raw.githubusercontent.com/janikvonrotz/hugo-lithium-theme/master/exampleSite/content/page/search.md) you will get a site wide search based on [lunr.js](https://lunrjs.com/).
+
 ## Content Types
 
 ### Post
