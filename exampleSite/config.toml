@@ -34,9 +34,10 @@ disqusShortname = ""
 
     [params.archive]
     url = "/archive/"
-
+    
     [params.search]
     url = "/search/"
+    img = "/images/search.svg"
 
 [outputs]
     section = ["JSON", "HTML"]
