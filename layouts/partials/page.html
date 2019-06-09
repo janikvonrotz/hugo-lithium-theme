@@ -10,6 +10,8 @@
 
     </article>
 
+    {{ if and (not (eq .Site.DisqusShortname "")) (not .Params.disable_comments) }}
     {{ template "_internal/disqus.html" . }}
+    {{ end }}
 
 </section>
