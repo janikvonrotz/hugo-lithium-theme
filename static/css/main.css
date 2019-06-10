@@ -149,8 +149,8 @@ nav .logo img {
 	width: auto;
 }
 nav .search img {
-	width: 25px;
-	margin-bottom: -8px;
+	width: 15px;
+	margin-bottom: -4px;
 }
 nav .links {
 	margin: 0;
@@ -178,6 +178,10 @@ nav .links li:first-child {
 	}
 	nav .links li {
 		margin: 0 0 0 30px;
+	}
+	nav .search img {
+		width: 25px;
+		margin-bottom: -8px;
 	}
 }
 

@@ -1,6 +1,7 @@
 ---
 title: "Search"
 date: 2019-06-07T20:22:57+02:00
+disable_comments: true
 ---
 
 <script src="https://unpkg.com/lunr/lunr.js"></script>
@@ -13,6 +14,11 @@ var documents = []
 function renderSearchResults(results){
 
     if (results.length > 0) {
+
+        // show max 10 results
+        if (results.length > 9){
+            results = results.slice(0,10)
+        }
 
         // reset search results
         searchResults.innerHTML = ''
@@ -43,8 +49,8 @@ function registerSearchHandler() {
 
         // remove search results if the user empties the search input field
         if (searchInput.value == '') {
+            
             searchResults.innerHTML = ''
-
         } else {
             
             // get input value
@@ -57,6 +63,10 @@ function registerSearchHandler() {
             renderSearchResults(results)
         }
     }
+
+    // set focus on search input and remove loading placeholder
+    searchInput.focus()
+    searchInput.placeholder = ''
 }
 
 window.onload = function() {
@@ -99,6 +109,6 @@ window.onload = function() {
 }
 </script>
 
-<input id="search-input" type="text" name="search">
+<input id="search-input" type="text" placeholder="Loading..." name="search">
 
 <section id="search-results" class="search"></section>
