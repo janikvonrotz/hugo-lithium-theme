@@ -34,6 +34,8 @@ file located in the [exampleSite](https://github.com/janikvonrotz/hugo-lithium-t
 
 ### Search
 
+Checkout this blogs post for deails: [Janik von Rotz - Simple Hugo page search with Lunr.js](https://janikvonrotz.ch/2019/06/10/2019-06-10-simple-hugo-page-search-with-lunrjs/)
+
 By default this template will create a JSON document of all posts. If you define a `search` page using [this search page template](https://raw.githubusercontent.com/janikvonrotz/hugo-lithium-theme/master/exampleSite/content/page/search.md) you will get a site wide search based on [lunr.js](https://lunrjs.com/).
 
 ## Content Types
