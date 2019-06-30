@@ -57,7 +57,7 @@ function registerSearchHandler() {
             var query = event.target.value
 
             // run fuzzy search
-            var results = idx.search(query + '~1')
+            var results = idx.search(query + '*')
 
             // render results
             renderSearchResults(results)
