@@ -371,3 +371,45 @@ footer .links-kudos img {
 		font-size: inherit;
 	}
 }
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+	body,
+	body > header {
+		background-color: #444;
+		color: #e4e4e4;
+	}
+
+	p, li, nav a, label, input,
+	h1, h2, h3, h4, h5, h6 {
+		color: #e4e4e4;
+	}
+	a {
+		color: #e39777;
+	}
+	img {
+		filter: grayscale(30%);
+	}
+	nav .logo img,
+	nav .search img {
+		filter: invert(1)
+	}
+
+	/* Article */
+
+	article blockquote {
+		background-color: #444;
+	}
+
+	/* Archive */
+
+	section.archive a {
+		color: #e39777;
+	}
+	section.archive .link:hover {
+		background: #cbf8fc;
+		border-bottom-color: #cbf8fc;
+	}
+}
+  
