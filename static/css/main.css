@@ -382,7 +382,7 @@ footer .links-kudos img {
 	}
 
 	p, li, nav a, label, input,
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6, td, th {
 		color: #e4e4e4;
 	}
 	a {
