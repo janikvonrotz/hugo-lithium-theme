@@ -2,7 +2,7 @@
 
     <article>
 
-        {{ $paginator := .Paginate (where .Pages "Type" "post") }}
+        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "post") }}
         {{ range $paginator.Pages }}
 
             <a href="{{ .RelPermalink }}"> {{ partial "image.html" . }}</a>
