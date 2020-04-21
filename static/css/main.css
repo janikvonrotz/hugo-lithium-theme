@@ -76,6 +76,10 @@ section.archive a {
 pre {
 	line-height: 1.8;
 }
+p code {
+	padding: .2em .4em;
+	background-color: #e4e4e4;
+}
 blockquote {
 	font-size: 1.4em;
 	line-height:1.6;
@@ -394,6 +398,9 @@ footer .links-kudos img {
 	nav .logo img,
 	nav .search img {
 		filter: invert(1)
+	}
+	p code {
+		color: #444;
 	}
 
 	/* Article */
