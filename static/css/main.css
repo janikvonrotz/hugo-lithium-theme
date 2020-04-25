@@ -76,7 +76,7 @@ section.archive a {
 pre {
 	line-height: 1.8;
 }
-p code {
+p code, li code {
 	padding: .2em .4em;
 	background-color: #e4e4e4;
 }
@@ -399,7 +399,7 @@ footer .links-kudos img {
 	nav .search img {
 		filter: invert(1)
 	}
-	p code {
+	p code, li code {
 		color: #444;
 	}
 
