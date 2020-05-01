@@ -75,6 +75,7 @@ section.archive a {
 }
 pre {
 	line-height: 1.8;
+	overflow-x: auto;
 }
 p code, li code {
 	padding: .2em .4em;
