@@ -6,18 +6,28 @@
       height="{{ .Site.Params.logo.height }}" 
       alt="{{ .Site.Params.logo.alt }}">
   </a>
+  <a class="title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 
-  <ul class="links">
-    {{ range .Site.Menus.main }}
-    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-    {{ end }}
+  <span id="open-nav">&#9776;</span>
+  <div id="navigation" class="overlay-menu">
+    <a class="close-nav">&times;</a>
+    <div class="overlay-menu-content">
 
-    {{ if .Site.Params.search }}
-    <li><a href="{{ .Site.Params.search.url }}" class="search">
-      <img src="{{ .Site.Params.search.img }}" alt="Search">
-    </a></li>
-    {{ end }}
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
 
-  </ul>
+      {{ if .Site.Params.subscribeURL }}
+      <a href="{{ .Site.Params.subscribeURL }}" target="blank" class="subscribe">Subscribe</a>
+      {{ end }}
 
-</nav>
+      {{ if .Site.Params.search }}
+      <a href="{{ .Site.Params.search.url }}" class="search">
+        <img src="{{ .Site.Params.search.img }}" alt="Search">
+      </a>
+      {{ end }}
+
+    </div>
+  </div>
+
+  </nav>

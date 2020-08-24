@@ -21,6 +21,9 @@
 			<li>
 				<a href="{{ .Site.RSSLink }}" type="application/rss+xml" target="_blank">RSS feed</a>
 			</li>
+			{{ if .Site.Params.subscribeURL }}
+			<a href="{{ .Site.Params.subscribeURL }}" target="blank">Subscribe</a>
+			{{ end }}
 			<li>
 				<a href="https://gohugo.io/" class="links-kudos">Made with <img src="/images/hugo-logo.png" width="22" height="22"></a>
 			</li>
@@ -29,6 +32,7 @@
 	</footer>
 
 	{{ template "_internal/google_analytics.html" . }}
+	<script src="/js/main.js"></script>
 
 </body>
 </html>

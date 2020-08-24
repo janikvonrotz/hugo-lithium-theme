@@ -4,7 +4,7 @@ licenselink = "https://github.com/janikvonrotz/hugo-lithium-theme/blob/master/LI
 description = "Lithium minimal theme"
 homepage = "https://github.com/janikvonrotz/hugo-lithium-theme"
 tags = ["blog"]
-features = ["blog", "google analytics", "responsive", "disqus", "twitter cards"]
+features = ["blog", "google analytics", "responsive", "disqus", "twitter cards", "dark mode"]
 min_version = 0.15
 
 [author]
