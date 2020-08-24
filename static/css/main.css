@@ -436,13 +436,15 @@ footer .links-kudos img {
 }
 
 /* Dark Mode */
-
 @media (prefers-color-scheme: dark) {
-	body,
-	body > header {
-		background-color: var(--background-color-inverted);
-		color: var(--background-color);
+
+	/* Basic */
+
+	img {
+		filter: grayscale(30%);
 	}
+
+	/* Typography */
 
 	p, li, nav a, label, input,
 	h1, h2, h3, h4, h5, h6, td, th {
@@ -451,15 +453,23 @@ footer .links-kudos img {
 	a {
 		color: var(--link-color-inverted);
 	}
-	img {
-		filter: grayscale(30%);
-	}
-	nav .logo img,
-	nav .search img {
-		filter: invert(1)
-	}
-	p code, li code {
+	p code,
+	li code {
 		color: var(--background-color-inverted);
+	}
+
+	/* Navigation */
+
+	body,
+	body > header {
+		background-color: var(--background-color-inverted);
+		color: var(--background-color);
+	}
+	nav img {
+		filter: invert(1);
+	}
+	nav #open-nav {
+		color: white;
 	}
 
 	/* Article */
@@ -478,4 +488,3 @@ footer .links-kudos img {
 		border-bottom-color: var(--link-hover-color-inverted);
 	}
 }
-  
