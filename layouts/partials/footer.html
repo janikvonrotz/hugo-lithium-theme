@@ -22,7 +22,9 @@
 				<a href="{{ .Site.RSSLink }}" type="application/rss+xml" target="_blank">RSS feed</a>
 			</li>
 			{{ if .Site.Params.subscribeURL }}
-			<a href="{{ .Site.Params.subscribeURL }}" target="blank">Subscribe</a>
+			<li>
+				<a href="{{ .Site.Params.subscribeURL }}" target="blank">Subscribe</a>
+			</li>
 			{{ end }}
 			<li>
 				<a href="https://gohugo.io/" class="links-kudos">Made with <img src="/images/hugo-logo.png" width="22" height="22"></a>
